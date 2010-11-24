@@ -62,36 +62,36 @@
 \contentsline {subsection}{\numberline {5.3}Newton-Raphson Iteration zur Nullstellenbestimmung}{13}
 \contentsline {section}{\numberline {6}Differentialgleichungen}{13}
 \contentsline {subsection}{\numberline {6.1}Homogene lineare DGL 2. Grades mit konstanten Koeffizienten}{13}
-\contentsline {section}{\numberline {7}Lineare Gleichungssysteme}{14}
-\contentsline {subsection}{\numberline {7.1}Definition}{14}
-\contentsline {subsection}{\numberline {7.2}L\"{o}sbarkeit von linearen Gleichungssystemen}{14}
-\contentsline {subsection}{\numberline {7.3}Gauss Algorithmus bei bestimmten LGS}{14}
-\contentsline {subsection}{\numberline {7.4}Schnittgerade bei undeterministischen LGS}{14}
-\contentsline {section}{\numberline {8}Lineare Abbildungen}{15}
-\contentsline {subsection}{\numberline {8.1}Definition}{15}
-\contentsline {subsection}{\numberline {8.2}Matrixdarstellung}{15}
-\contentsline {subsection}{\numberline {8.3}Verkettung linearer Abbildungen}{15}
-\contentsline {subsection}{\numberline {8.4}Umkehrung linearer Abbildungen}{15}
-\contentsline {subsection}{\numberline {8.5}Bild und Urbild einer linearen Abbildung}{16}
-\contentsline {subsection}{\numberline {8.6}Kern einer linearen Abbildung}{16}
-\contentsline {subsection}{\numberline {8.7}Dimensionssatz}{16}
-\contentsline {subsection}{\numberline {8.8}Injektivit\"{a}t, Surjektivit\"{a}t und Bijektivit\"{a}t einer linearen Abbildung}{16}
-\contentsline {section}{\numberline {9}Eigenwerte und Eigenvektoren}{17}
-\contentsline {subsection}{\numberline {9.1}Definition}{17}
-\contentsline {subsection}{\numberline {9.2}Charakteristisches Polynom}{17}
-\contentsline {subsection}{\numberline {9.3}Charakteristische Gleichung}{17}
-\contentsline {subsection}{\numberline {9.4}Eigenvektoren}{17}
-\contentsline {section}{\numberline {10}Determinanten}{18}
-\contentsline {subsection}{\numberline {10.1}Definition}{18}
-\contentsline {subsection}{\numberline {10.2}Regel von Sarrus}{18}
-\contentsline {subsection}{\numberline {10.3}Entwicklungssatz von Laplace}{18}
-\contentsline {section}{\numberline {11}Graphentheorie}{19}
-\contentsline {subsection}{\numberline {11.1}Definition}{19}
-\contentsline {subsection}{\numberline {11.2}Knotengrade}{19}
-\contentsline {subsection}{\numberline {11.3}Matrixdarstellungen von Graphen}{19}
-\contentsline {subsubsection}{\numberline {11.3.1}Adjazenzmatrix}{19}
-\contentsline {subsubsection}{\numberline {11.3.2}Inzidenzmatrix}{19}
-\contentsline {subsection}{\numberline {11.4}Kantenfolgen und Erreichbarkeit}{19}
-\contentsline {subsection}{\numberline {11.5}Zusammenhang}{20}
-\contentsline {subsection}{\numberline {11.6}Eulersche Linie}{20}
-\contentsline {subsection}{\numberline {11.7}Hamiltonsche Linie}{20}
+\contentsline {section}{\numberline {7}Lineare Gleichungssysteme}{15}
+\contentsline {subsection}{\numberline {7.1}Definition}{15}
+\contentsline {subsection}{\numberline {7.2}L\"{o}sbarkeit von linearen Gleichungssystemen}{15}
+\contentsline {subsection}{\numberline {7.3}Gauss Algorithmus bei bestimmten LGS}{15}
+\contentsline {subsection}{\numberline {7.4}Schnittgerade bei undeterministischen LGS}{15}
+\contentsline {section}{\numberline {8}Lineare Abbildungen}{16}
+\contentsline {subsection}{\numberline {8.1}Definition}{16}
+\contentsline {subsection}{\numberline {8.2}Matrixdarstellung}{16}
+\contentsline {subsection}{\numberline {8.3}Verkettung linearer Abbildungen}{16}
+\contentsline {subsection}{\numberline {8.4}Umkehrung linearer Abbildungen}{16}
+\contentsline {subsection}{\numberline {8.5}Bild und Urbild einer linearen Abbildung}{17}
+\contentsline {subsection}{\numberline {8.6}Kern einer linearen Abbildung}{17}
+\contentsline {subsection}{\numberline {8.7}Dimensionssatz}{17}
+\contentsline {subsection}{\numberline {8.8}Injektivit\"{a}t, Surjektivit\"{a}t und Bijektivit\"{a}t einer linearen Abbildung}{17}
+\contentsline {section}{\numberline {9}Eigenwerte und Eigenvektoren}{18}
+\contentsline {subsection}{\numberline {9.1}Definition}{18}
+\contentsline {subsection}{\numberline {9.2}Charakteristisches Polynom}{18}
+\contentsline {subsection}{\numberline {9.3}Charakteristische Gleichung}{18}
+\contentsline {subsection}{\numberline {9.4}Eigenvektoren}{18}
+\contentsline {section}{\numberline {10}Determinanten}{19}
+\contentsline {subsection}{\numberline {10.1}Definition}{19}
+\contentsline {subsection}{\numberline {10.2}Regel von Sarrus}{19}
+\contentsline {subsection}{\numberline {10.3}Entwicklungssatz von Laplace}{19}
+\contentsline {section}{\numberline {11}Graphentheorie}{20}
+\contentsline {subsection}{\numberline {11.1}Definition}{20}
+\contentsline {subsection}{\numberline {11.2}Knotengrade}{20}
+\contentsline {subsection}{\numberline {11.3}Matrixdarstellungen von Graphen}{20}
+\contentsline {subsubsection}{\numberline {11.3.1}Adjazenzmatrix}{20}
+\contentsline {subsubsection}{\numberline {11.3.2}Inzidenzmatrix}{20}
+\contentsline {subsection}{\numberline {11.4}Kantenfolgen und Erreichbarkeit}{20}
+\contentsline {subsection}{\numberline {11.5}Zusammenhang}{21}
+\contentsline {subsection}{\numberline {11.6}Eulersche Linie}{21}
+\contentsline {subsection}{\numberline {11.7}Hamiltonsche Linie}{21}

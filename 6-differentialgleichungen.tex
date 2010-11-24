@@ -49,3 +49,40 @@ müssen nun 3 Fälle unterschieden werden:
 			y(x) = e^{ax}(C_1 cos(bx) + C_2 sin(bx))
 		\end{displaymath}
 \end{itemize}
+
+Beispiel $y''(x)-4y'(x)+4y(x)=0$:
+\begin{eqnarray*}
+  \lambda^2-4\lambda+4=0\\
+  \lambda_{1,2}=2\pm\sqrt{4-4}=2\\
+  y=C_1 e^{2x} + C_2 xe^{2x}
+\end{eqnarray*}
+
+Beispiel $y''(x)-4y'(x)+4y(x)=e^{2x}$:
+
+Hinweis: Für die partikuläre Lösung $y_p(x)=A\cdot x^2\cdot e^{2x}$ ansetzen und $A$ bestimmen
+\begin{eqnarray*}
+  y_p &=& Ax^2e^{2x}\\
+  y_p' &=& A (2xe^{2x}+2x^2e^{2x})\\
+  y_p'' &=& 2A(e^{2x}+2xe^{2x}+2xe^{2x}+2x^2e^{2x})\\
+\end{eqnarray*}
+\begin{eqnarray*}
+  2A(e^{2x}+4xe^{2x}+2x^2e^{2x})-4A(2xe^{2x}+2x^2e^{2x})+4Ax^2e^{2x} &=& e^{2x}\\
+  4Ae^{2x}(\frac{1}{2}+2x+x^2)-4Ae^{2x}(2x+2x^2)+4Ax^2e^{2x} &=& e^{2x}\\
+  4Ae^{2x}(\frac{1}{2}+2x+x^2-2x-2x^2+x^2) &=& e^{2x}\\
+  4A\cdot \frac{1}{2} &=& 1\\
+  4A &=& 2\\
+  A &=& \frac{2}{4}=\frac{1}{2}\\
+\end{eqnarray*}
+\begin{eqnarray*}
+  y=y_n+y_p=C_1e^{2x}+C_2xe^{2x}+\frac{x^2e^{2x}}{2}
+\end{eqnarray*}
+
+Beispiel: Lösung der Gleichung, mit Anfangsbedingungen $y(0)=0$ und $y'(0)=2$
+\begin{eqnarray*}
+  y=y_n+y_p=C_1e^{2x}+C_2xe^{2x}+\frac{x^2e^{2x}}{2}\\
+  y'=2C_1e^{2x}+C_2(e^{2x}+2xe^{2x})+\frac{x^2e^{2x}}{2}\\
+  0=C_1\\
+  2=2C_1+C_2 \cdot 1\\
+  C_2=2\\
+  y=2xe^{2x}+\frac{x^2e^{2x}}{2}
+\end{eqnarray*}
