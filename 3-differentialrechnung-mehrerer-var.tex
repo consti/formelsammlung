@@ -1,67 +1,124 @@
 %!TEX root = formelsammlung-master.tex
+\section{Differentialrechnung bei Funktionen mehrerer Variablen} % (fold)
+\label{sec:differentialrechnung_bei_funktionen_mehrerer_variablen}
 
-\section{Funktionen}
-\label{sec:funktionen}
-\subsection{Abbildungstypen}
-\label{sub:abbildungstypen}
+\subsection{Partielles Differenzieren} % (fold)
+\label{sub:partielles_differenzieren}
 
-\subsubsection{$\mathbb{R} \rightarrow \mathbb{R}$}
-\label{ssub:rr}
-Beispiel mit 1. Ableitung:
-\begin{eqnarray*}
-	f(x) &=& sin(x)cos(x) \\
-	f'(x) &=& cos^2(x)-sin^2(x)
-\end{eqnarray*}
+Partielle Ableitung von $f$ nach $x_1$: $\frac{\partial f}{\partial x_1} f(x_1,x_2,...,x_n)$
 
-\subsubsection{$\mathbb{R} \rightarrow \mathbb{R}^n$}
-\label{ssub:rrn}
-Beispiel mit 1. Ableitung (Ableitungsvektor):
-\begin{eqnarray*}
-	f(t) &=& \left(\begin{array}{c} cos(t)) \\ sin(t))\end{array}\right) \\
-	\nabla f(t) &=& \left( \begin{array}{c} -sin(t) \\ cos(t)\end{array} \right)
-\end{eqnarray*}
+\subsection{Gradientenvektor} % (fold)
+\label{sub:gradientenvektor}
+Gradientenvektor $\nabla f$ zu $f(x_1,x_2,...,x_n)$: 
+\begin{equation}
+	grad(f) = \nabla f = \left(\begin{array}{c} \frac{\partial f}{\partial x_1} \\ 
+	\frac{\partial f}{\partial x_2} \\ \vdots \\ \frac{\partial f}{\partial x_n} \end{array}\right)
+\end{equation}
+Vektor aus partiellen Ableitungen nach allen Argumenten von $f$
 
-\subsubsection{$\mathbb{R}^n \rightarrow \mathbb{R}$}
-\label{ssub:rne}
-Beispiel mit 1. Ableitung (Gradientenvektor):
-\begin{eqnarray*}
-	f(x_1,x_2) &=& sin(x_1)cos(x_2) \\
-	\nabla f(x_1,x_2) &=& \left( \begin{array}{c} cos(x_1) cos(x_2) \\ -sin(x_1)sin(x_2) \end{array} \right)
-\end{eqnarray*}
-	
-\subsubsection{$\mathbb{R}^n \rightarrow \mathbb{R}^m$}
-\label{ssub:rnrm}
-Beispiel mit 1. Ableitung (Jacobi-Matrix): 
-\begin{eqnarray*}
-	f(x_1,x_2) &=& \left(\begin{array}{c} sin(x_1) \\ cos(x_2)\end{array}\right) \\
-	\nabla f(x_1,x_2) = J_f &=& \left( \begin{array}{cc} cos(x_1) & 0 \\ 0 & -sin(x_2) \end{array} \right)
-\end{eqnarray*}	
+\subsection{Konturlinien} % (fold)
+\label{sub:konturlinien}
+Beispiel:
 
-\subsection{Niveaulinien bei mehrdimensionalen Funktionen}
-\label{sub:niveaulinien_bei_mehrdimensionalen_funktionen}
+$h(x,y)=\frac{2}{x-y}$
+
+$c=\frac{2}{x-y} \Rightarrow x-y=\frac{2}{c} \Rightarrow y=x-\frac{2}{c}$
+
+$h(x,y)=-2 \Rightarrow -2:y=x-\frac{2}{c} \Rightarrow y=x-\frac{2}{-2} \Rightarrow y=x+1$
+% subsection konturlinien (end)
+
+\subsection{Hesse-Matrix} % (fold)
+\label{sub:hesse_matrix}
+Hesse-Matrix $H_f$ zu $f(x_1,x_2,...,x_n)$: 
 
 \begin{equation}
-	f(x_1,x_2,...,x_n) = y = c
+	H_f = \nabla^2f = \left( \begin{array}{cccc}
+		\frac{\partial^2 f}{\partial x_1^\partial x_1} & \frac{\partial^2 f}{\partial x_1^\partial x_2} 
+		& \dots & \frac{\partial^2 f}{\partial x_1^\partial x_n} \\
+		
+		\frac{\partial^2 f}{\partial x_2^\partial x_1} & \frac{\partial^2 f}{\partial x_2^\partial x_2} 
+		& \dots & \frac{\partial^2 f}{\partial x_2^\partial x_n} \\	
+		\vdots & \vdots & \ddots & \vdots \\
+		\frac{\partial^2 f}{\partial x_n^\partial x_1} & \frac{\partial^2 f}{\partial x_n^\partial x_2} 
+		& \dots & \frac{\partial^2 f}{\partial x_n^\partial x_n}
+	\end{array}\right)
 \end{equation}
-Auflösen nach $x_2$ und Niveauebenen für $c$ einsetzen.
 
-\subsection{Injektivit\"{a}t, Surjektivit\"{a}t, Bijektivit\"{a}t}
-\label{sub:injektivitaet_surjektivitaet_bijektivitaet}
+\subsection{Jacobi-Matrix} % (fold)
+\label{sub:jacobi_matrix}
+Jacobi-Matrix $J_f(x)$ zu $f(x) = \left( \begin{array}{c}f_1(x)\\\vdots\\f_m(x)\end{array}\right), 
+\mathbb{R}^n \rightarrow \mathbb{R}^m$:
 
-Sei eine Funktion $f : V \rightarrow W$ gegeben.
+\begin{eqnarray}
+	\nabla f(x) &=& J_f(x)  = \nabla \left( \begin{array}{c}f_1(x)\\\vdots\\f_m(x)\end{array}\right) 
+	= \left( \begin{array}{c} \nabla f_1(x_1,...,x_n) \\ \vdots \\ \nabla f_m(x_1,...,x_n) \end{array} \right) \\
+	&=& \left( \begin{array}{ccc} 
+			\frac{\partial}{\partial x_1}f_1(x_1,...,x_n) & ... & \frac{\partial}{\partial x_n}f_1(x_1,...,x_n) \\
+			... & \ddots & ... \\
+			\frac{\partial}{\partial x_1}f_m(x_1,...,x_n) & ... & \frac{\partial}{\partial x_n}f_m(x_1,...,x_n)
+		\end{array}\right)
+\end{eqnarray}
+
+
+\subsection{Richtungsableitung} % (fold)
+\label{sub:richtungsableitung}
+
+Die Richtungsableitung $D_vf$ einer Funktion $f(x_1,x_2,...,x_n)$ entlang 
+eines Vektors $\overrightarrow{v}$ ($|\overrightarrow{v}| = 1$!) 
+im Punkt $\overrightarrow{p}$ ist definiert als:
+\begin{equation}
+	D_vf = \nabla f(p) \cdot \overrightarrow{v}
+\end{equation}
+Das Ergebnis ist ein reiner Zahlenwert, der sich aus dem Skalarprodukt von $\overrightarrow{v}$ mit dem Gradienten-Vektor
+der Funktion $f$ ergibt.
+
+\subsection{Tangentialabbildung} % (fold)
+\label{sub:tangentialabbildung}
+Sei $f : \mathbb{R}^m \rightarrow \mathbb{R}^n, f(x_1,x_2,...,x_n) = y$, dann ist $g(x)$ eine affin lineare Abbildung und heißt
+\emph{Tangentialabbildung} von $f$ in $\overrightarrow{p}$.
+\begin{equation}
+	g(x) = f(\overrightarrow{p}) + \nabla f(\overrightarrow{p})\cdot(\overrightarrow{x}-\overrightarrow{p})
+\end{equation}
+Beispiel: An die Funktion $f : \mathbb{R}^2 \rightarrow \mathbb{R}, f(x,y) = \frac{2}{x-y}$ soll in Punkt $\overrightarrow{p} = 
+\left(\begin{array}{c}0\\1\end{array}\right)$ eine Tangentialebene gelegt werden:
+($\nabla f = \left(\begin{array}{c}-\frac{2}{(x-y)^2}\\\frac{2}{(x-y)^2}\end{array}\right)$). 
+\begin{eqnarray*}
+	g(x,y) &=& f(p) + \nabla f(p) \cdot (x-p) \\
+	&=& \frac{2}{0-1} + \left(\begin{array}{c}-\frac{2}{(x-y)^2}\\\frac{2}{(x-y)^2}\end{array}\right) \cdot
+	 \left(\left(\begin{array}{c}x\\y\end{array}\right) - \left(\begin{array}{c}0\\1\end{array}\right) \right) \\
+	&=& -2 + \left(\begin{array}{c}-\frac{2}{(x-y)^2}\\\frac{2}{(x-y)^2}\end{array}\right) \cdot
+	 \left(\begin{array}{c}x\\y-1\end{array}\right)\\
+	&=& -2 + \left(\begin{array}{c}-2\\2\end{array}\right) \cdot
+	  \left(\begin{array}{c}x\\y-1\end{array}\right)\\
+	&=& -2-2x+2y-2 \\
+	&=& -2x+2y-4
+\end{eqnarray*}
+
+
+\subsection{Taylorpolynom 2. Grades} % (fold)
+\label{sub:taylorpolynom_2_grades}
+
+Taylorpolynom für $f(x_1,x_2,...,x_n)$ im Punkt $\overrightarrow{p} = (p_1,p_2,...,p_n)$:
+
+\begin{equation}
+	T_2 = f(\overrightarrow{p}) + (\overrightarrow{x}-\overrightarrow{p}) \cdot \nabla f(\overrightarrow{p})+\frac{1}{2}
+	(\overrightarrow{x}-\overrightarrow{p})^2 \cdot H_f(\overrightarrow{p})
+\end{equation}
+
+\subsection{Mehrdimensionale Optimierung} % (fold)
+\label{sub:mehrdimensionale_optimierung}
+
+\subsubsection{Optimierung ohne Nebenbedingungen} % (fold)
+\label{ssub:optimierung_ohne_nebenbedingungen}
+Sei $f$ zweimal stetig differenzierbar bei $x_0$.
+\\Stationäre Punkte (notwendige Bedingung):
+\begin{equation}
+	\nabla f (x_0) = 0
+\end{equation}
+Art des Extremums (hinreichende Bedingung):
 
 \begin{itemize}
-	\item Wird jedes Element aus $W$ durch $f$ höchstens 1-mal getroffen, dann ist $f$ \textbf{injektiv}.
-	\item Wird jedes Element aus $W$ durch $f$ mindestens 1-mal getroffen, dann ist $f$ \textbf{surjektiv}.
-	\item Wird jedes Element aus $W$ durch $f$ genau 1-mal getroffen, dann ist $f$ \textbf{bijektiv}.
+	\item $H_f(x_0) = \nabla^2f(x_0)$ : \ positiv definit \  $\Rightarrow f $ ist in $ x_0 $ lokal minimal
+	\item $H_f(x_0) = \nabla^2f(x_0)$ : \ negativ definit \  $\Rightarrow f $ ist in $ x_0 $ lokal maximal
+	\item $H_f(x_0) = \nabla^2f(x_0)$ : \ indefinit \ $\Rightarrow f $ hat in $ x_0 $ einen Sattelpunkt
 \end{itemize}
-
-\subsection{Taylor-Reihen}
-\label{sub:taylor_reihen}
-
-Eine beliebige Funktion $f(x)$ kann an der Stelle $x_0$ durch eine Taylor-Reihe
-angenähert werden. Die Reihe lautet dann: 
-\begin{equation}
-	f(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{1}{2}f''(x_0)(x-x_0)^2 
-	+ \frac{1}{6}f'''(x_0)(x-x_0)^3 + ...
-\end{equation}
