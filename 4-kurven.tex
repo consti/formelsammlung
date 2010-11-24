@@ -14,6 +14,15 @@ Die Länge $L(\gamma)$ einer Kurve $f(t) = (f_1(t),f_2(t),...,f_n(t)), f:[a,b] \
 	L(\gamma) = \int_a^b \sqrt{f'_1(t)^2 + f'_2(t)^2 + ... + f'_n(t)^2}dt
 \end{equation}
 
+Beispiel $f_1(t) = \cos(t), f_2(t) = \sin(t)$:
+\begin{eqnarray*}
+	L(\gamma) &=& \int_a^b \sqrt{f'_1(t)^2 + f'_2(t)^2}dt\\
+	&=& \int_a^b \sqrt{(-\sin(t))^2 + (\cos(t))^2}dt\\
+	&=& \int_a^b \sqrt{\sin^2(t) + \cos^2(t)}dt\\
+	&=& \int_a^b 1dt = t|_a^b = b - a
+\end{eqnarray*}
+
+
 \subsection{Tangentialvektor/Tangente}
 \label{sub:tangentialvektor_tangente}
 
