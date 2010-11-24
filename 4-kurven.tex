@@ -21,7 +21,28 @@ Der Tangentialvektor einer Kurve $\gamma$ im Punkt $t_0$ ist definiert als Einhe
 \begin{equation}
 	e(t_0) = \frac{\nabla f(t_0)}{|\nabla f(t_0)|}
 \end{equation}
+
 Die Tangente $\tau$ an $\gamma$ im Punkt $t_0$ ist demnach:
 \begin{equation}
 	\tau : \tau(t) = f(t_0) +  t \cdot e(t_0)
 \end{equation}
+
+Beispiel: Tangentialvektor im Punkt $t_0=\left( \frac{3\pi}{4}\right)$:
+\begin{eqnarray*}
+	f &\rightarrow& \left( \frac{\cos t}{\sin t} \right)\\
+	x' &\Rightarrow& -\sin (t)\\
+	y' &\Rightarrow& \cos (t) \\
+	x'\left( \frac{3\pi}{4}\right) &=& -\frac{1}{\sqrt{2}}\\
+	y'\left( \frac{3\pi}{4}\right) &=& -\frac{1}{\sqrt{2}}\\
+	&\Rightarrow& \left(\begin{array}{c} -\frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \end{array}\right)
+\end{eqnarray*}
+
+Die Tangente $\tau$ an $\gamma$ im Punkt $t_0$ ist demnach (Parameterform):
+\begin{eqnarray*}
+  \tau &\Rightarrow& \left(\begin{array}{c} x \\ y \end{array}\right) + \lambda  \left(\begin{array}{c} x' \\ y' \end{array}\right)\\
+	x\left( \frac{3\pi}{4}\right) &=& \frac{1}{\sqrt{2}}\\
+	y\left( \frac{3\pi}{4}\right) &=& -\frac{1}{\sqrt{2}}\\
+	&\Rightarrow& \left(\begin{array}{c} \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \end{array}\right) + \lambda  \left(\begin{array}{c} -\frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \end{array}\right)\\
+\end{eqnarray*}    
+
+
