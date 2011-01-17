@@ -2,6 +2,14 @@
 \section{Differentialrechnung bei Funktionen mehrerer Variablen} % (fold)
 \label{sec:differentialrechnung_bei_funktionen_mehrerer_variablen}
 
+\subsection{Definitionsbereich} % (fold)
+\label{sub:definitionsbereich}
+Beispiel: $f(x,y)=log\left(\frac{x-y}{2}\right)$:
+\[
+  D=\{ x,y \in R|(x-y)>0\}
+\]
+% subsection definitionsbereich (end)
+
 \subsection{Partielles Differenzieren} % (fold)
 \label{sub:partielles_differenzieren}
 
@@ -43,6 +51,38 @@ Hesse-Matrix $H_f$ zu $f(x_1,x_2,...,x_n)$:
 		& \dots & \frac{\partial^2 f}{\partial x_n^\partial x_n}
 	\end{array}\right)
 \end{equation}
+
+Beispiel:
+Hesse-Matrix $H_f$ zu $f(x,y)=log\frac{x-y}{2}$:
+
+\begin{equation*}
+  \nabla f(x,y) =
+  \left(
+    \begin{array}{c}
+      log\frac{x-y}{2} dx\\
+      log\frac{x-y}{2} dy\\
+    \end{array}
+  \right) =
+  \left(
+    \begin{array}{c}
+      \frac{2}{x-y} \cdot \frac{1}{2}\\
+      \frac{2}{x-y} \cdot -\frac{1}{2}\\
+    \end{array}
+  \right) =
+  \left(
+    \begin{array}{c}
+      \frac{1}{x-y}\\
+      -\frac{1}{x-y}
+    \end{array}
+  \right)
+\end{equation*}
+
+
+\begin{equation*}
+  \nabla^2 f(x,y) =
+\left\{\left\{-\frac{1}{(x-y)^2},\frac{1}{(x-y)^2}\right\},\left\{\frac{1}{(x-y)^2},-\frac{1}{(x-y)^2}\right\}\right\}
+\end{equation*}
+  
 
 \subsection{Jacobi-Matrix} % (fold)
 \label{sub:jacobi_matrix}

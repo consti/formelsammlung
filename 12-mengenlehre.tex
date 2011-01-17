@@ -1,0 +1,77 @@
+%!TEX root = formelsammlung-master.tex
+
+\section{Mengenlehre} % (fold)
+\label{sec:mengenlehre}
+
+\subsection{Gruppeneigenschaften} % (fold)
+\label{sub:gruppeneigenschaften}
+  \subsubsection{Abgeschlossenheit} % (fold)
+  \label{ssub:abgeschlossenheit}
+    $a, b \in G \Rightarrow a \times b \in G $
+  % subsubsection abgeschlossenheit (end)
+  \subsubsection{Assoziativität} % (fold)
+  \label{ssub:assoziativitaet}
+    $a,b,c \in G \Rightarrow (a \times b) \times c = a \times (b \times c)$
+  % subsubsection assoziativitaet (end)
+  \subsubsection{Einheitselement} % (fold)
+  \label{ssub:einheitselement}
+    Es gibt ein $e \in G$, genannt Einheitselement oder neutrales Element, das linksneutral und rechtsneutral is. $e$ heißt rechtsneutral, falls $a \times e = a$ für alle $a \in G$. Es kann höchstens ein Einheitselement geben, denn sind $e$ und $e'$ Einheitselemente, so folgt $e=e \times e'=e'$
+  % subsubsection einheitselement (end)
+  \subsubsection{Inverse Elemente} % (fold)
+  \label{ssub:inverse_elemente}
+    Zu jedem $a \in G$ gibt es ein inverses Element $a' \in G$, das zu $a$ linksinvers und rechtsinvers is. $a'$ heißt linksinvers zu $a$, falls $a' \times a = e$. $a'$ heißt rechtsinvers zu $a$, falls $a \times a' = e$.
+    Gilt (Assoziatvität), so ist auch das inverse Element eindeutig bestimmt: Seien $a'$ und $a''$ inverse Elemente zu $a$.
+    Dann gilt $a'=a' \times e=a' \times (a \times a'')=(a' \times a) \times a''=e \times a'' = a''$
+  % subsubsection inverse_elemente (end)  
+  
+  \subsubsection{Kommutativität} % (fold)
+  \label{ssub:kommutativitaet}
+    $a,b \in G \Rightarrow a \times b = b \times a$
+  % subsubsection kommutativitaet (end)
+
+% subsection gruppeneigenschaften (end)
+
+\subsection{Strukturen} % (fold)
+\label{sub:strukturen}
+  \begin{itemize}
+    \item Gruppoid, falls 'Abgeschlossenheit'
+    \item Halbgruppe, falls 'Abgeschlossenheit' und 'Assoziatvität'
+    \item Monoid, falls 'Abgeschlossenheit', 'Assoziatvität' und 'Einheitselement'
+    \item Gruppe, falls 'Abgeschlossenheit', 'Assoziatvität', 'Einheitselement' und 'Inverse Elemente'
+    \item 'kommutative Gruppe' falls zusätzlich 'Kommutativität' gilt
+  \end{itemize}
+% subsection strukturen (end)
+
+\subsection{Elemente einer Gruppe} % (fold)
+\label{sub:elemente_einer_gruppe}
+  $A=\{a,b,c\}$, $P(A)$ die Potenzmenge von $A$.
+  Die Potenzmenge beinhaltet immer alle Teilmengen (bestehend aus allen Elementen):
+  \begin{equation}
+    P(A) = \{ \emptyset, \{a\}, \{b\}, \{c\},\{a,b\},\{a,c\},\{b,c\},\{a,b,c\}\}
+  \end{equation}
+  
+  \paragraph*{Neutrales Element}
+    Sei $(P(A),\cup)$ eine Gruppe (Vereinigung) - Berechnung des neutralen Elements:
+    Beim neutralen Element gilt: $x \cup e = x$. Das neutrale Element $e$ ist dann
+    die leere Menge $ \emptyset $.
+  \paragraph*{Kommutativität}
+    Ja, die Vereinigung ($\cup$) ist eine kommutative Relation. Es gilt: $\{a\} \cup \{b\} = \{a,b\} = \{b\}\cup\{a\} $
+  
+  \paragraph*{Teilordnung} Ist die Teilmengenrelation $P(A)$, also $(P(A),\subseteq)$ eine Teilordnung?
+  Hierfür muss transitivität, reflexivität und antisymetrie erfüllt sein:
+  \begin{itemize}
+    \item Reflexivität: $A \subseteq A$
+    \item Antisymmetrie: Aus $A \subseteq B$ und $B\subseteq A$ folgt $A = B$
+    \item Transitivität: Aus $A \subseteq B$ und $B \subseteq C$ folgt $A \subseteq C$
+  \end{itemize}
+  
+  
+  \paragraph*{Einselement}
+  Das Einselement von der Gruppe $(P(A),\cup)$ ist $A$.
+  
+  \paragraph*{Inverse Element}
+  Das inverse Element muss der Bedingung $x\cup x^-1=A$ genügen. Damit ist $x^-1=x^c$.
+  $x^c=A\backslash x$ (Beispiel: $\{a\}^c = A\backslash \{a\} = \{b,c\}$)
+% subsection elemente_einer_gruppe (end)
+
+% section mengenlehre (end)

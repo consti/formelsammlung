@@ -13,20 +13,22 @@
 \contentsline {subsubsection}{\numberline {1.3.1}Winkelfunktionen}{4}
 \contentsline {subsubsection}{\numberline {1.3.2}Exponentialfunktionen}{5}
 \contentsline {subsubsection}{\numberline {1.3.3}Logarithmusfunktionen}{5}
+\contentsline {subsubsection}{\numberline {1.3.4}Homogene lineare Differentialgleichung}{5}
 \contentsline {subsection}{\numberline {1.4}Spezielle Werte}{5}
 \contentsline {subsubsection}{\numberline {1.4.1}Sinus und Cosinus Funktionen}{5}
+\contentsline {subsubsection}{\numberline {1.4.2}Logarithmus}{5}
 \contentsline {subsection}{\numberline {1.5}Integration}{5}
 \contentsline {subsubsection}{\numberline {1.5.1}Hauptsatz der Integralrechnung}{5}
-\contentsline {subsubsection}{\numberline {1.5.2}Integration der Exponentialfunktion}{5}
-\contentsline {subsubsection}{\numberline {1.5.3}Partielle Integration}{5}
+\contentsline {subsubsection}{\numberline {1.5.2}Integration der Exponentialfunktion}{6}
+\contentsline {subsubsection}{\numberline {1.5.3}Partielle Integration}{6}
 \contentsline {subsection}{\numberline {1.6}Vektoren}{6}
 \contentsline {subsubsection}{\numberline {1.6.1}Addition und Substraktion von Vektoren}{6}
 \contentsline {subsubsection}{\numberline {1.6.2}Skalarmultiplikation}{6}
 \contentsline {subsubsection}{\numberline {1.6.3}Skalarprodukt}{6}
 \contentsline {subsubsection}{\numberline {1.6.4}Kreuzprodukt}{6}
 \contentsline {subsubsection}{\numberline {1.6.5}Betrag eines Vektors}{6}
-\contentsline {subsection}{\numberline {1.7}Matrizen}{6}
-\contentsline {subsubsection}{\numberline {1.7.1}Matrixmultiplikation}{6}
+\contentsline {subsection}{\numberline {1.7}Matrizen}{7}
+\contentsline {subsubsection}{\numberline {1.7.1}Matrixmultiplikation}{7}
 \contentsline {subsubsection}{\numberline {1.7.2}Multiplikation eines Vektors mit einer Matrix}{7}
 \contentsline {subsubsection}{\numberline {1.7.3}Kriterium von Sylvester}{7}
 \contentsline {subsubsection}{\numberline {1.7.4}Rang einer Matrix}{7}
@@ -38,21 +40,22 @@
 \contentsline {subsubsection}{\numberline {2.1.1}$\mathbb {R} \rightarrow \mathbb {R}$}{8}
 \contentsline {subsubsection}{\numberline {2.1.2}$\mathbb {R} \rightarrow \mathbb {R}^n$}{8}
 \contentsline {subsubsection}{\numberline {2.1.3}$\mathbb {R}^n \rightarrow \mathbb {R}$}{8}
-\contentsline {subsubsection}{\numberline {2.1.4}$\mathbb {R}^n \rightarrow \mathbb {R}^m$}{8}
+\contentsline {subsubsection}{\numberline {2.1.4}$\mathbb {R}^n \rightarrow \mathbb {R}^m$}{9}
 \contentsline {subsection}{\numberline {2.2}Niveaulinien bei mehrdimensionalen Funktionen}{9}
 \contentsline {subsection}{\numberline {2.3}Injektivit\"{a}t, Surjektivit\"{a}t, Bijektivit\"{a}t}{9}
 \contentsline {subsection}{\numberline {2.4}Taylor-Reihen}{9}
 \contentsline {section}{\numberline {3}Differentialrechnung bei Funktionen mehrerer Variablen}{9}
-\contentsline {subsection}{\numberline {3.1}Partielles Differenzieren}{9}
-\contentsline {subsection}{\numberline {3.2}Gradientenvektor}{9}
-\contentsline {subsection}{\numberline {3.3}Konturlinien}{9}
-\contentsline {subsection}{\numberline {3.4}Hesse-Matrix}{10}
-\contentsline {subsection}{\numberline {3.5}Jacobi-Matrix}{10}
-\contentsline {subsection}{\numberline {3.6}Richtungsableitung}{10}
-\contentsline {subsection}{\numberline {3.7}Tangentialabbildung}{10}
-\contentsline {subsection}{\numberline {3.8}Taylorpolynom 2. Grades}{11}
-\contentsline {subsection}{\numberline {3.9}Mehrdimensionale Optimierung}{11}
-\contentsline {subsubsection}{\numberline {3.9.1}Optimierung ohne Nebenbedingungen}{11}
+\contentsline {subsection}{\numberline {3.1}Definitionsbereich}{9}
+\contentsline {subsection}{\numberline {3.2}Partielles Differenzieren}{9}
+\contentsline {subsection}{\numberline {3.3}Gradientenvektor}{9}
+\contentsline {subsection}{\numberline {3.4}Konturlinien}{10}
+\contentsline {subsection}{\numberline {3.5}Hesse-Matrix}{10}
+\contentsline {subsection}{\numberline {3.6}Jacobi-Matrix}{10}
+\contentsline {subsection}{\numberline {3.7}Richtungsableitung}{10}
+\contentsline {subsection}{\numberline {3.8}Tangentialabbildung}{11}
+\contentsline {subsection}{\numberline {3.9}Taylorpolynom 2. Grades}{11}
+\contentsline {subsection}{\numberline {3.10}Mehrdimensionale Optimierung}{11}
+\contentsline {subsubsection}{\numberline {3.10.1}Optimierung ohne Nebenbedingungen}{11}
 \contentsline {section}{\numberline {4}Kurven}{11}
 \contentsline {subsection}{\numberline {4.1}Definition}{11}
 \contentsline {subsection}{\numberline {4.2}Tangentialvektor/Tangente}{12}
@@ -95,3 +98,12 @@
 \contentsline {subsection}{\numberline {11.5}Zusammenhang}{21}
 \contentsline {subsection}{\numberline {11.6}Eulersche Linie}{21}
 \contentsline {subsection}{\numberline {11.7}Hamiltonsche Linie}{21}
+\contentsline {section}{\numberline {12}Mengenlehre}{21}
+\contentsline {subsection}{\numberline {12.1}Gruppeneigenschaften}{21}
+\contentsline {subsubsection}{\numberline {12.1.1}Abgeschlossenheit}{21}
+\contentsline {subsubsection}{\numberline {12.1.2}Assoziativit\IeC {\"a}t}{21}
+\contentsline {subsubsection}{\numberline {12.1.3}Einheitselement}{21}
+\contentsline {subsubsection}{\numberline {12.1.4}Inverse Elemente}{22}
+\contentsline {subsubsection}{\numberline {12.1.5}Kommutativit\IeC {\"a}t}{22}
+\contentsline {subsection}{\numberline {12.2}Strukturen}{22}
+\contentsline {subsection}{\numberline {12.3}Elemente einer Gruppe}{22}
